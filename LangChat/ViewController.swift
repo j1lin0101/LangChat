@@ -20,6 +20,7 @@ class ViewController: JSQMessagesViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.setup()
         self.addDemoMessages()
+        self.inputToolbar.contentView.leftBarButtonItem = nil
     }
 
     override func didReceiveMemoryWarning() {
