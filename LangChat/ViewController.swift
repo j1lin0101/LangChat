@@ -11,8 +11,8 @@ import JSQMessagesViewController
 
 class ViewController: JSQMessagesViewController {
     
-    let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(red: 10/255, green: 180/255, blue: 230/255, alpha: 1.0))
-    let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.lightGrayColor())
+    let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(red: 5/255, green: 230/255, blue: 10/255, alpha: 1.0))
+    let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0))
     var messages = [JSQMessage]()
 
     override func viewDidLoad() {
@@ -35,12 +35,8 @@ class ViewController: JSQMessagesViewController {
 
 extension ViewController {
     func addDemoMessages() {
-        for i in 1...10 {
-            let sender = (i%2 == 0) ? "Server" : self.senderId
-            let messageContent = "Message nr. \(i)"
-            let message = JSQMessage(senderId: sender, displayName: sender, text: messageContent)
-            self.messages += [message]
-        }
+        let message = JSQMessage(senderId: "Not you", displayName: "Random Person", text: "Hello friend")
+        self.messages += [message]
         self.reloadMessagesView()
     }
     
