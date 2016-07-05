@@ -1,0 +1,6 @@
+framework module Pods_LangChat {
+  umbrella header "Pods-LangChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

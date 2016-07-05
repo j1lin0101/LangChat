@@ -12,9 +12,12 @@
 		3F31F3301D2C5B26001671D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F31F32E1D2C5B26001671D6 /* Main.storyboard */; };
 		3F31F3321D2C5B26001671D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F31F3311D2C5B26001671D6 /* Assets.xcassets */; };
 		3F31F3351D2C5B26001671D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F31F3331D2C5B26001671D6 /* LaunchScreen.storyboard */; };
+		E3847F1957A0A6628894DDE3 /* Pods_LangChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517D674168CAA8D663ECED76 /* Pods_LangChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1F05C277E6B2C1D80A4CB8 /* Pods-LangChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LangChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LangChat/Pods-LangChat.debug.xcconfig"; sourceTree = "<group>"; };
+		3DD7F935F3E05CE8757CE1E1 /* Pods-LangChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LangChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LangChat/Pods-LangChat.release.xcconfig"; sourceTree = "<group>"; };
 		3F31F3271D2C5B26001671D6 /* LangChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LangChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F31F32A1D2C5B26001671D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F31F32C1D2C5B26001671D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		3F31F3311D2C5B26001671D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F31F3341D2C5B26001671D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F31F3361D2C5B26001671D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517D674168CAA8D663ECED76 /* Pods_LangChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LangChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3847F1957A0A6628894DDE3 /* Pods_LangChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3F31F3291D2C5B26001671D6 /* LangChat */,
 				3F31F3281D2C5B26001671D6 /* Products */,
+				4FD0AC74974A16C0D54A5C40 /* Pods */,
+				D94A515FEEF1311B3820DACF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LangChat;
 			sourceTree = "<group>";
 		};
+		4FD0AC74974A16C0D54A5C40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E1F05C277E6B2C1D80A4CB8 /* Pods-LangChat.debug.xcconfig */,
+				3DD7F935F3E05CE8757CE1E1 /* Pods-LangChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D94A515FEEF1311B3820DACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517D674168CAA8D663ECED76 /* Pods_LangChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F31F3391D2C5B26001671D6 /* Build configuration list for PBXNativeTarget "LangChat" */;
 			buildPhases = (
+				35EA5932BA07AE38BA2E05AB /* [CP] Check Pods Manifest.lock */,
 				3F31F3231D2C5B26001671D6 /* Sources */,
 				3F31F3241D2C5B26001671D6 /* Frameworks */,
 				3F31F3251D2C5B26001671D6 /* Resources */,
+				69C54FB85C5C890ADEA64A09 /* [CP] Embed Pods Frameworks */,
+				2969F8EA03DDDC20AB609AB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2969F8EA03DDDC20AB609AB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LangChat/Pods-LangChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35EA5932BA07AE38BA2E05AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69C54FB85C5C890ADEA64A09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LangChat/Pods-LangChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F31F3231D2C5B26001671D6 /* Sources */ = {
@@ -248,6 +323,7 @@
 		};
 		3F31F33A1D2C5B26001671D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1F05C277E6B2C1D80A4CB8 /* Pods-LangChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LangChat/Info.plist;
@@ -259,6 +335,7 @@
 		};
 		3F31F33B1D2C5B26001671D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD7F935F3E05CE8757CE1E1 /* Pods-LangChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LangChat/Info.plist;
@@ -287,6 +364,7 @@
 				3F31F33B1D2C5B26001671D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
