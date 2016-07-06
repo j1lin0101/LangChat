@@ -1,15 +1,39 @@
 PODS:
+  - ApiAI (0.5.3):
+    - ApiAI/AudioFileConverter (= 0.5.3)
+    - ApiAI/Core (= 0.5.3)
+    - ApiAI/ResponseMapping (= 0.5.3)
+    - ApiAI/UIKit (= 0.5.3)
+    - ApiAI/UserEntities (= 0.5.3)
+    - ApiAI/VoiceFileRequest (= 0.5.3)
+    - ApiAI/VoiceRequest (= 0.5.3)
+  - ApiAI/AudioFileConverter (0.5.3):
+    - ApiAI/Core
+  - ApiAI/Core (0.5.3)
+  - ApiAI/ResponseMapping (0.5.3):
+    - ApiAI/Core
+  - ApiAI/UIKit (0.5.3):
+    - ApiAI/Core
+    - ApiAI/VoiceRequest
+  - ApiAI/UserEntities (0.5.3):
+    - ApiAI/Core
+  - ApiAI/VoiceFileRequest (0.5.3):
+    - ApiAI/Core
+  - ApiAI/VoiceRequest (0.5.3):
+    - ApiAI/Core
   - JSQMessagesViewController (7.3.3):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
 
 DEPENDENCIES:
+  - ApiAI
   - JSQMessagesViewController
 
 SPEC CHECKSUMS:
+  ApiAI: 17c7fbe2d3142adff488fca3da0c7646c8e1d62f
   JSQMessagesViewController: 0ee3f80237268192a3e8337fd0d787f1a1bf5a7a
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
 
-PODFILE CHECKSUM: ae7663f56e3ad49b87b13e262c0e854fd0f0ffbb
+PODFILE CHECKSUM: 3fa0caa808176d131a82a152a10711d6d0f01894
 
 COCOAPODS: 1.0.1
